@@ -1,5 +1,5 @@
 import os
-from ADB_Easy_Control_Package import device_assistant
+from ADB_Easy_Control import device_assistant
 
 
 # 仅可输入英文字符

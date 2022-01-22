@@ -1,5 +1,5 @@
-from ADB_Easy_Control_Package import touch_event
-from ADB_Easy_Control_Package import data_model
+from ADB_Easy_Control import touch_event
+from ADB_Easy_Control import data_model
 
 
 def point_touch_withobj(position: data_model.Point, sleep_time: float):

@@ -1,6 +1,6 @@
 import os
 import datetime
-from ADB_Easy_Control_Package import device_assistant
+from ADB_Easy_Control import device_assistant
 
 
 def screen_capture() -> str:

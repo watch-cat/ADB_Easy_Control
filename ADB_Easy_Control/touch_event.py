@@ -2,7 +2,7 @@ import os
 import time
 import random
 import math
-from ADB_Easy_Control_Package import data_model, device_assistant
+from ADB_Easy_Control import data_model, device_assistant
 from functools import singledispatch
 
 

@@ -22,7 +22,7 @@ def _(position: data_model.Point, sleep_time: float):
 def point_swipe(start_position_x: int, start_position_y: int, end_position_x: int, end_position_y: int,
                 swipe_time: float, sleep_time: float):
     if swipe_time == 0:
-        os.system('adb' + device_assistant.multi_devices_helper() + ' shell input swipe' + format(
+        os.system('adb' + device_assistant.multi_devices_helper() + ' shell input swipe ' + format(
             start_position_x) + ' ' + format(start_position_y) + ' ' + format(
             end_position_x) + ' ' + format(end_position_y))
 
@@ -30,7 +30,7 @@ def point_swipe(start_position_x: int, start_position_y: int, end_position_x: in
         if swipe_time > 5:
             print('You may have entered too long a slide time of ' + format(
                 swipe_time) + ' seconds.\nNote that the sliding time is in seconds and not milliseconds.')
-        os.system('adb' + device_assistant.multi_devices_helper() + ' shell input swipe' + format(
+        os.system('adb' + device_assistant.multi_devices_helper() + ' shell input swipe ' + format(
             start_position_x) + ' ' + format(start_position_y) + ' ' + format(
             end_position_x) + ' ' + format(end_position_y) + '' + format(swipe_time * 1000))
 
@@ -51,7 +51,7 @@ def point_longtime_touch(position_x: int, position_y: int, touch_time: float, sl
         print('You may have entered too long a touch time of ' + format(
             touch_time) + ' seconds.\nNote that the touching time is in seconds and not milliseconds.')
     os.system(
-        'adb' + device_assistant.multi_devices_helper() + ' shell input swipe' + format(position_x) + ' ' + format(
+        'adb' + device_assistant.multi_devices_helper() + ' shell input swipe ' + format(position_x) + ' ' + format(
             position_y) + ' ' + format(
             position_x) + ' ' + format(position_y) + '' + format(touch_time * 1000))
 
